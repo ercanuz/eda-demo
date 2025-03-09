@@ -1,0 +1,6 @@
+---
+- name: Restart OpenShift Deployment
+  hosts: localhost
+  tasks:
+    - name: Restart Deployment
+      command: oc rollout restart deployment/mywebapp -n mywebapp
